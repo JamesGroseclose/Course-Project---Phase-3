@@ -1,6 +1,6 @@
-#
-#
-#
+# James Groseclose
+# CIS 216
+# Course Project Phase 3
   
 # write the line of code to import the datetime library (Hint: see Week 1 Lab 3 solution as a guide
 from datetime import datetime
@@ -59,8 +59,7 @@ def printinfo(DetailsPrinted):
     TotNetPay = 0.00
 #****************************************************************************************************************************
     # write the line of code that will open the file in read mode and assign it to EmpFile (Hint: see week 6, lab 2 as a guide)
-
-    
+    with open(Employees.txt, "r") as EmpFile:    
         while True:
             rundate = input ("Enter start date for report (MM/DD/YYYY) or All for all data in file: ")
             if (rundate.upper() == "ALL"):
