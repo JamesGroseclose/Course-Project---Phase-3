@@ -75,10 +75,13 @@ def printinfo(DetailsPrinted):
         while True:
             EmpDetail = EmpFile.readline()
             # write the if statemment that will break out of the while loop when no data is left in the file
-
+            if not EmpDetail:
+                break            
             # write the line of code that will remove the carriage return from EmpDetail
-            
+            EmpDetail = EmpDetail.replace("\n", "")
+                        
             # write the ine of code that will split EmpDetail on the pipe delimiter and assign to the list EmpList
+            EmpList = EmpDetails.split("|")
 
 #********************************************************************************************************************************
             fromdate = EmpList[0]
